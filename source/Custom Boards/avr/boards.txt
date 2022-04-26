@@ -1,0 +1,39 @@
+################################################################################
+################################## Pro Micro ###################################
+################################################################################
+a500mini.name=A500 Mini Pro Micro ATmega32U4 (5V, 16 MHz)
+a500mini.vid.0=0x2341
+a500mini.pid.0=0x0036
+a500mini.vid.1=0x2341
+a500mini.pid.1=0x8036
+a500mini.vid.2=0x2A03
+a500mini.pid.2=0x0036
+a500mini.vid.3=0x2A03
+a500mini.pid.3=0x8036
+
+a500mini.upload.tool=avrdude
+a500mini.upload.protocol=avr109
+a500mini.upload.maximum_size=28672
+a500mini.upload.maximum_data_size=2560
+a500mini.upload.speed=57600
+a500mini.upload.disable_flushing=true
+a500mini.upload.use_1200bps_touch=true
+a500mini.upload.wait_for_upload_port=true
+
+a500mini.bootloader.tool=avrdude
+a500mini.bootloader.low_fuses=0xff
+a500mini.bootloader.high_fuses=0xd8
+a500mini.bootloader.extended_fuses=0xcb
+a500mini.bootloader.file=caterina/Caterina-Leonardo.hex
+a500mini.bootloader.unlock_bits=0x3F
+a500mini.bootloader.lock_bits=0x2F
+
+a500mini.build.mcu=atmega32u4
+a500mini.build.f_cpu=16000000L
+a500mini.build.vid=0x22BA
+a500mini.build.pid=0x1020
+a500mini.build.usb_product="A500 Mini to USB"
+a500mini.build.board=AVR_LEONARDO
+a500mini.build.core=arduino:arduino
+a500mini.build.variant=leonardo
+a500mini.build.extra_flags={build.usb_flags}

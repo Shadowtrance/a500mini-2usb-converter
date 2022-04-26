@@ -26,7 +26,7 @@ private:
   uint16_t _buttons = 0x0;
   uint8_t _x_axis = 0x7F;
   uint8_t _y_axis = 0x7F;
-  
+
 public:
   
   Joystick_(void);

@@ -15,8 +15,6 @@
 
 #if defined(_USING_HID)
 
-#define JOYSTICK_REPORT_ID 0x01
-
 static const uint8_t _hidReportDescriptor[] PROGMEM = {
 
   // Joystick descriptor
@@ -24,7 +22,7 @@ static const uint8_t _hidReportDescriptor[] PROGMEM = {
   0x09, 0x04,                   // USAGE (Joystick)
   0xa1, 0x01,                   // COLLECTION (Application)
     0xa1, 0x02,                 // COLLECTION (Application)
-      0x85, JOYSTICK_REPORT_ID, // Report ID
+      0x85, 0x01, // Report ID
       0x75, 0x08,               // REPORT_SIZE (8)
       0x95, 0x02,               // REPORT_COUNT (2)
       0x26, 0xff, 0x00,         // LOGICAL_MAXIMUM (255)
@@ -111,7 +109,7 @@ void Joystick_::usb_update()
   m[3] = _buttons >> 8;
   m[4] = 0x0;
     
-  HID().SendReport(JOYSTICK_REPORT_ID,m,sizeof(m));
+  HID().SendReport(0x01,m,sizeof(m));
 }
 
 Joystick_ Joystick;
