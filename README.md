@@ -1,18 +1,19 @@
 Introduction
 ============
-The code in this repository converts the signals of the original C64 and Sega Megadrive controllers and emulates USB based joysticks for use on unmodded THEC64Mini and SEGA Megadrive Mini consoles. 
+Adapted original code to work on the A500 mini.
 
-It is meant to be installed on an Arduino compatible SparkFun Pro Micro with a male DB9 connector attached to the digital inputs.
+Copy the **a500mini-2usb-converter** folder to your **sketchbook** folder.
 
-It will also work under Windows/linux with Vice
+Copy the **Custom Boards** folder to your arduino ide **hardware** folder and select **A500 Mini Pro Micro ATmega32u4 (5v, 16mhz)** from the boards menu.
 
-See change log for history.
+I've included a modified case top stl that includes space for 6 buttons (X, Y, L, R, Menu, Home)
 
-The repository also includes designs for a case to be 3D printed, as well as some Windows based tools used during debugging and development.
+This adaptation assumes your joystick has 2 separate buttons wired to button 1 and 2 (pins 6 and 9 on the DE9 (DB9)).
+
+It also assumes you're using an arduino pro micro (clone or otherwise) and arduino ide 1.8.13, although the version shouldn't really matter too much i don't think.
 
 
 Documentation
 =============
-Full documentation can be found on https://www.tsb.space/projects/c64-mini-arcade2usb-converter/ and https://github.com/wbovela/arcade2usb-converter
-
+See master branch for original code and documentation.
 
