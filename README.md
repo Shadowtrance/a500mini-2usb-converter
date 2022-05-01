@@ -1,5 +1,7 @@
 Introduction
 ============
+NOT WORKING WITH WHDLoad Games at the moment, I don't know why. :(
+
 Adapted original code to work on the A500 mini.
 
 Copy the **a500mini-2usb-converter** folder to your **sketchbook** folder.
