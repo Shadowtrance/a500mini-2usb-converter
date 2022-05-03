@@ -1,6 +1,6 @@
 Introduction
 ============
-NOT WORKING WITH WHDLoad Games at the moment, I don't know why. :(
+Works with WHDLoad Games as long as you start the game from the menu with this controller. (assuming you have another plugged in too)
 
 Adapted original code to work on the A500 mini.
 
